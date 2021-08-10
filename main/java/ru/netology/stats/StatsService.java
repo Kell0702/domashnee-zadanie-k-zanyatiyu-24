@@ -13,12 +13,12 @@ public class StatsService {
     }
 
     public long averageMonth(long[] sales) {
-        long average = 0;
-        long sum =0;
-        for (long sale : sales) {
-            sum = sum + sale;
-        }
-        average = sum / sales.length;
+        long average = sumMonth(sales)/ sales.length;
+        //long sum =0;
+        //for (long sale : sales) {
+        //    sum = sum + sale;
+        //}
+        //average = sum / sales.length;
         return average;
 
     }
